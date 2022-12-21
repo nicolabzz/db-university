@@ -1,0 +1,65 @@
+1ST -
+
+SELECT * 
+FROM `students` 
+WHERE YEAR(date_of_birth) = '1990';
+
+=================================================
+
+2ND -
+
+SELECT * 
+FROM `courses` 
+WHERE cfu > 10;
+
+=================================================
+
+3RD -
+
+SELECT * 
+FROM `students`
+WHERE YEAR(date_of_birth) = '1992';
+
+=================================================
+
+4TH -
+
+SELECT * 
+FROM `courses` 
+WHERE period = 'I semestre' AND year = '1';
+
+=================================================
+
+5TH -
+
+SELECT * 
+FROM `exams`
+WHERE date = '2020-06-20' AND hour > '14:00:00';
+
+=================================================
+
+6TH -
+
+SELECT * 
+FROM `degrees` 
+WHERE level = 'magistrale';
+
+=================================================
+
+7TH -
+
+SELECT COUNT(*) 
+FROM `departments`;
+
+// or
+//
+// SELECT *
+// FROM `department`;
+
+=================================================
+
+8TH -
+
+SELECT COUNT(*) 
+FROM `teachers`
+WHERE phone IS NULL;
